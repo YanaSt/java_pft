@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -15,6 +16,7 @@ public class ApplicationManager {
 
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
+    private ContactHelper contactHelper;
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -22,11 +24,11 @@ public class ApplicationManager {
     }
 
     public void init() {
-        if (browser == BrowserType.FIREFOX) {
+        if (Objects.equals(browser, BrowserType.FIREFOX)) {
             wd = new FirefoxDriver();
-        } else if (browser == BrowserType.CHROME) {
+        } else if (Objects.equals(browser, BrowserType.CHROME)) {
             wd = new ChromeDriver();
-        } else if (browser == BrowserType.IE) {
+        } else if (Objects.equals(browser, BrowserType.IE)) {
             wd = new InternetExplorerDriver();
         }
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -47,5 +49,9 @@ public class ApplicationManager {
 
     public NavigationHelper getNavigationHelper() {
         return navigationHelper;
+    }
+
+    public ContactHelper getContactHelper() {
+        return contactHelper;
     }
 }
