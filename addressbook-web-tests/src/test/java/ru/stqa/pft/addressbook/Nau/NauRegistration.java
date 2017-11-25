@@ -24,7 +24,7 @@ public class NauRegistration {
         wd.findElement(By.xpath("/html/body/div[1]/header/div/div/div[4]/a[2]")).click();
         wd.findElement(By.xpath("//*[@id=\"inputEmail\"]")).click();
         wd.findElement(By.xpath("//*[@id=\"inputEmail\"]")).clear();
-        wd.findElement(By.xpath("//*[@id=\"inputEmail\"]")).sendKeys("tst@mail.ru");
+        wd.findElement(By.xpath("//*[@id=\"inputEmail\"]")).sendKeys("tst1@mail.ru");
         wd.findElement(By.xpath("//*[@id=\"inputFirstName\"]")).click();
         wd.findElement(By.xpath("//*[@id=\"inputFirstName\"]")).clear();
         wd.findElement(By.xpath("//*[@id=\"inputFirstName\"]")).sendKeys("test1");

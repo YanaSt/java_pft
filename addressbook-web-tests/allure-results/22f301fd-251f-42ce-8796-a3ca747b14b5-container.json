@@ -1,0 +1,1 @@
+{"uuid":"22f301fd-251f-42ce-8796-a3ca747b14b5","name":"ru.stqa.pft.addressbook.Nau.NauRegistration.tearDown","description":"","start":1511640297416,"stop":1511640298638,"children":["11577296-a841-4293-afe6-2d0281cf87e8"],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","start":1511640297416,"stop":1511640298638}]}

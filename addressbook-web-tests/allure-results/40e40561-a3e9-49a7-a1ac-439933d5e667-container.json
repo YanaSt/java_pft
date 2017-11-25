@@ -1,0 +1,1 @@
+{"uuid":"40e40561-a3e9-49a7-a1ac-439933d5e667","name":"ru.stqa.pft.addressbook.Nau.NauLogin.setUp","description":"","start":1511640243831,"stop":1511640253263,"children":["ebe135d4-e389-4889-b85f-217f61eacce0"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","start":1511640243832,"stop":1511640253260}]}
